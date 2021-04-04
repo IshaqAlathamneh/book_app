@@ -1,0 +1,69 @@
+#mainp {
+    text-align: center;
+}
+#title {
+    height: 27px;
+    position: absolute;
+    /* right: 136px; */
+    left: 120px;
+    width: 65px;
+    top: 18px;
+}
+#author {
+    height: 27px;
+    position: absolute;
+    /* right: 136px; */
+    left: 120px;
+    width: 65px;
+    top: 18px;
+}
+input:placeholder-shown{
+    text-align: center;
+    font-size: x-large;
+}
+input:value{
+    text-align: center;
+    font-size: x-large;
+}
+.radio {
+    position: relative;
+    width: calc(100% - 50px);
+    height: 80px;
+    background-color:#9eb2a9;
+    margin: 0 25px;
+}
+div {
+    position: relative;
+    width: calc(100% - 50px);
+    margin: 20px auto;
+    background-color: #eee;
+    height: auto;
+}
+div img {
+    width: 40%;
+    margin: 20px 30%;
+}
+div h4 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 25px auto;
+}
+div h5 {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin: 25px auto;
+}
+div p {
+    text-align: center;
+    margin: 25px auto;
+}
+@media( min-width:768px){
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div {width: calc(50% - 50px);}
+    
+}
