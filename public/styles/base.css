@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
+}
+h1 {
+    margin: 0 auto;
+}
