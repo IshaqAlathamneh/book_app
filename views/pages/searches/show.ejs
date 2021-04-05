@@ -16,13 +16,28 @@
     <main>
         <h2>Search Results</h2>
 
-        <% myBooks.forEach(element => { %>
-            <div>
-                <img src="<%= element.img%>" alt="">
-                <h4><%= element.title%></h4>
-                <h5><%= element.author%></h5>
-                <p><%= element.des%></p>
+        <% myBooks.forEach((element,inx) => { %>
+            <div><form action="/" method="POST">
+                <input type="hidden" value="<%= element.img%>" name="two" id="img<%= inx%>">
+                <label for="img<%= inx%>"> <img src="<%= element.img%>" alt=""></label>
+                
+                <input type="hidden" value="<%= element.title%>" name="two" id="h4<%= inx%>">
+                <label for="h4<%= inx%>"> <h4><%= element.title%></h4></label>
+                
+                <input type="hidden" value="<%= element.author%>" name="two" id="h5<%= inx%>">
+                <label for="h5<%= inx%>"><h5><%= element.author%></h5></label>
+                
+                <input type="hidden" value="<%= element.des%>" name="two" id="p1<%= inx%>">
+                <label for="p1<%= inx%>"><p><%= element.des%></p></label>
+                
+                <input type="hidden" value="<%= element.type%>" name="two" id="p2<%= inx%>">
+                <label for="p2<%= inx%>"><p><%= element.type%></p></label>
+                
+                <button type="submit" >SAVE Book</button>
+            </form>
+                
             </div>
+            
         <% }) %>
     </main>
     <footer>
