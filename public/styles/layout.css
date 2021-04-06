@@ -107,3 +107,6 @@ nav ul li a{
     div {width: calc(50% - 50px);}
     
 }
+#updateF {
+    display: none;
+}
