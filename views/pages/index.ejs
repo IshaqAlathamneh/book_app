@@ -24,7 +24,7 @@
                 <h4><%= element.title%></h4>
                 <h5><%= element.author%></h5>
                 <!-- <p><%= element.description%></p> -->
-                <form action="/books/details/<%= inx+2%>" method="GET">
+                <form action="/books/details/<%= element.id%>" method="GET">
                     <button>View Details</button>
                 </form>
             </div>
